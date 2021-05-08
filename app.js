@@ -1,4 +1,4 @@
-
+let html = document.getElementById("app.js")
 var usuario = prompt("Cual es tu peso?");
 var planeta = parseInt(
   prompt("Elige tu planeta\n1 es marte, 2 es jupiter")

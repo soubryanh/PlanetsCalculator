@@ -1,8 +1,8 @@
 let html = document.getElementById("app.js")
-var usuario = prompt("Cual es tu peso?");
-var planeta = parseInt(
-  prompt("Elige tu planeta\n1 es marte, 2 es jupiter")
-);
+// var usuario = prompt("Cual es tu peso?");
+// var planeta = parseInt(
+//   prompt("Elige tu planeta\n1 es marte, 2 es jupiter")
+// );
 var peso = parseInt(usuario);
 var g_tierra = 9.8;
 

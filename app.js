@@ -1,26 +1,34 @@
-let html = document.getElementById("app.js")
-// var usuario = prompt("Cual es tu peso?");
-// var planeta = parseInt(
-//   prompt("Elige tu planeta\n1 es marte, 2 es jupiter")
-// );
-var peso = parseInt(usuario);
-var g_tierra = 9.8;
+let user = document.getElementById("display");
+let buttones = Array.from(document.getElementsByClassName("buttons"));
+console.log(buttones);
 
-var g_marte = 3.7;
-var g_jupiter = 24.8;
-var peso_final;
-var nombre;
-if (planeta == 1) {
-  peso_final = (peso * g_marte) / g_tierra;
-  nombre = "Marte";
-} else if (planeta == 2) {
-  peso_final = (peso * g_jupiter) / g_tierra;
-  nombre = "Jupiter";
-} else {
-  peso_final = 1000000;
-  nombre = "Krypton";
-}
-peso_final = parseInt(peso_final);
-document.write(
-  "Tu peso en " + nombre + " es <strong>" + peso_final + " kilos</strong>"
-);
+buttones.map((buttons) => {
+  buttons.addEventListener("click", (e) => {
+    switch (e.target.value) {
+      case "C":
+        display.value = "";
+        break;
+      case "CE":
+        display.value = display.value.slice(0, -1);
+        break;
+
+      case "=":
+        try {
+          display.value = eval(display.value);
+        } catch {
+          display.value = "Invalid expresion ;c";
+        }
+        break;
+      case "/":
+        display.value = "";
+        break;
+      default:
+        display.value += e.target.value;
+    }
+
+    console.log("clicked");
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.value);
+  });
+});

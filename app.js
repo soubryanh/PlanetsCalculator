@@ -19,9 +19,6 @@ buttones.map((buttons) => {
           display.value = "Invalid expresion ;c";
         }
         break;
-      case "/":
-        display.value = "";
-        break;
       default:
         display.value += e.target.value;
     }

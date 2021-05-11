@@ -29,7 +29,9 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
-
+h1 {
+  margin: 30px;
+}
 .container #display {
   width: 100%;
   min-height: 100px;
@@ -39,7 +41,8 @@ body {
   color: #fff;
   text-align: right;
   background: transparent;
-  padding-right: 10px;
+  padding-right: 30px;
+  font-size: x-large;
 }
 
 .container input[type="button"] {
@@ -57,7 +60,4 @@ body {
 }
 .container input[type="button"]:hover {
   background: rgba(255, 255, 255, 0.1);
-}
-.container input.botton0 {
-  grid-column: 1/3;
 }
